@@ -1,0 +1,19 @@
+output_dir: "/media/ubuntu/My Passport/OOD/data/OOD_leilei/XCLIP_MODEL"
+root_path: '/media/ubuntu/My Passport/CAPDATA'
+
+
+
+NUM_FRAMES: 16
+MODEL_ARCH: 'ViT-B/16'
+pool: 'mean'
+learning_rate: 1e-4
+train_batch_size: 2
+max_train_steps: 90000
+checkpointing_steps: 6000
+validation_steps: 500000
+
+seed: 123
+mixed_precision: fp16
+use_8bit_adam: False
+gradient_checkpointing: True
+enable_xformers_memory_efficient_attention: True
