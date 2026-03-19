@@ -59,12 +59,23 @@ The inference pipeline expects several local assets to be available, including:
 - [`./checkpoint`](https://huggingface.co/wwwadad/ADVersa/tree/main/RAVD)    
 - [`./graph_model.bin`](https://huggingface.co/wwwadad/ADVersa/blob/main/RAVD/Graph)
 - [`./lora_Video_LLaVA/`](https://huggingface.co/wwwadad/ADVersa/tree/main/LORA)
-- [`./contro/`](https://huggingface.co/wwwadad/ADVersa/blob/main/RAVD/controlnet.pth,https://huggingface.co/wwwadad/ADVersa/blob/main/RAVD/controlnet.pth)
+- [`./contro/`](https://huggingface.co/wwwadad/ADVersa/blob/main/RAVD/controlnet.pth)
 - `./Video_LLaVA/LanguageBind/Video-LLaVA-7B-hf`
 ---
 
+## Model Zoo
 
+C_Crash
 
+FAR
+
+MCVD
+
+Cosmos
+
+AVD2
+
+Seer
 
 ## Citation
 
