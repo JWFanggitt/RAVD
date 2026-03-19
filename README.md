@@ -19,7 +19,7 @@
 The training and testing data are expected to follow a structure similar to the following.
 
 ### Training data
-Download [Train_DATA]([https://your-link.com](https://huggingface.co/wwwadad/ADVersa/blob/main/Train_DATA.zip))
+Download [Train_DATA](https://huggingface.co/wwwadad/ADVersa/blob/main/Train_DATA.zip)
 ```text
 Train_DATA/
 ├── Train_Relation/
