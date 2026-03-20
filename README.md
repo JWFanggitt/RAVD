@@ -64,49 +64,11 @@ Important:
 
 The current code mixes relative paths and hardcoded local paths. If you want to run the repository without editing code, keep the following directory layout. Otherwise, update the paths in `grapth_my_dataset.py`.
 
-### Inference data
 
-The inference script creates the dataset with:
-
-```python
-DADA2KS_Graph_Inference(root_path="./Test_Data/Test_Relation", phase="val")
-```
-
-At the same time, the same dataset class reads RGB, depth, and mask frames from hardcoded paths under `/home/lotvs/Code/Test_Data/`.
-
-For the current code, the expected structure is:
-
-```text
-Test_Data/
-├── Test_Relation/
-│   ├── test_lava.txt
-│   └── <sample_id>/
-│       ├── *.json
-│       └── ...
-├── Test_Video/
-│   └── <sample_id>/
-│       └── images/
-│           ├── *.jpg
-│           └── ...
-├── Test_Depth/
-│   └── <sample_id>/
-│       ├── *.jpg
-│       └── ...
-└── Test_Mask/
-    └── <sample_id>/
-        ├── *.png
-        └── ...
-```
-
-If you keep the code unchanged, `Test_Video`, `Test_Depth`, and `Test_Mask` are currently read from:
-
-```text
-/home/lotvs/Code/Test_Data/Test_Video
-/home/lotvs/Code/Test_Data/Test_Depth
-/home/lotvs/Code/Test_Data/Test_Mask
-```
 
 ### Training data
+
+Download our [Train_Data](https://huggingface.co/wwwadad/ADVersa/blob/main/Train_DATA.zip)
 
 The training script creates the dataset with:
 
@@ -168,6 +130,44 @@ Per-frame relation JSON files are expected to provide at least:
 
 These fields are used to build object ids, relation ids, normalized boxes, angle features, and text prompts for graph-conditioned reasoning.
 
+
+### Inference data
+Download our [Test_Data](https://huggingface.co/wwwadad/ADVersa/blob/main/Test_DATA.zip)
+
+The inference script creates the dataset with:
+
+```python
+DADA2KS_Graph_Inference(root_path="./Test_Data/Test_Relation", phase="val")
+```
+For the current code, the expected structure is:
+
+```text
+Test_Data/
+├── Test_Relation/
+│   ├── test_lava.txt
+│   └── <sample_id>/
+│       ├── *.json
+│       └── ...
+├── Test_Video/
+│   └── <sample_id>/
+│       └── images/
+│           ├── *.jpg
+│           └── ...
+├── Test_Depth/
+│   └── <sample_id>/
+│       ├── *.jpg
+│       └── ...
+└── Test_Mask/
+    └── <sample_id>/
+        ├── *.png
+        └── ...
+```
+Note
+
+We also provide some test samples for qualitative evaluation.  
+After extracting the 
+```python Test_DATA.zip```, users can access the prediction and recovery videos produced by **RAVD**, **Cosmos**, and **Seer**.
+
 ## Quick Start
 
 ### Inference
@@ -188,15 +188,16 @@ The main outputs are written to `./output/`:
 
 Run training with:
 
+Download the [pretraining weights](https://huggingface.co/wwwadad/ADVersa/tree/main/Pretrain)
+
+
 ```bash
 python train_with_graph.py --config ./configs/lora_training_config.yaml
 ```
 
-Before large training runs, it is a good idea to review local save paths in `train_with_graph.py`, because several paths in this repository are still environment-specific.
-
 ## Task Notes
 
-This section only adds a brief note for the **Key Action** and **Prevention** tasks. It is not meant to replace the general project description above. For other task definitions and full benchmark details, please visit `www.lotvsmmau.net`.
+This section only adds a brief note for the **Key Action** and **Prevention** tasks. For other task definitions and full benchmark details, please visit our [homepage](www.lotvsmmau.net).
 
 ### Key Action
 
@@ -251,7 +252,7 @@ So the prevention task can be viewed as:
 (video, reason_text, prevention_text)
 ```
 
-This README only keeps a short note here because the full task set is larger than this repository-level overview. For other MMAU tasks, please refer to `www.lotvsmmau.net`.
+Download the key_action and prevention tasks [data](https://drive.google.com/file/d/1cNxH-sCtCYHqPAogq6YhH2WJOvrH8XjC/view?usp=sharing)
 
 ## Citation
 
