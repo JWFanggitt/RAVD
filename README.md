@@ -1,5 +1,8 @@
 # RAVD
 
+Understanding traffic accident scenes is a long standing research for vision-based safe driving. It seeks to answer why accidents occur, how near-crash scenes develop, and what the key elements of an accident are. This research is challenging due to the scarcity and fragmentation of accident data, as well as the complex accident environments. To study this, we present
+a framework of Abductive Driving accident Video understanding (ADVersa), which infers a plausible visual and textual explanation for the absent near-crash scenes. ADVersa underscores three groups of tasks: 1) visual past recovery of near-crash scenes, 2) visual prediction of near-crash scenes, and 3) accident cause involved video synthesis. To support the study, we first contribute MM-AU, a novel dataset for Multi-Modal Accident video Understanding. MM-AU contains 11,727 in-the-wild driving accident videos with temporally aligned text descriptions, 2.23 million well-annotated object boxes, and 58,650 pairs of video based accident cause texts.
+
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](#environment-setup)
