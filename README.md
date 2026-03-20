@@ -116,14 +116,16 @@ Two text index files are important in the current code:
 Based on the current parser in `grapth_my_dataset.py`, `train_v_lava.txt` is read as:
 
 ```text
-video_id // reason_text // prevention_text // accident_type_text // relation_reason_text
+video_id // reason_text // prevention_text // accident_type_text 
 ```
 
 and `test_lava.txt` is read as:
 
 ```text
-video_id // reason_text // accident_type_text // auxiliary_text
+video_id // reason_text // prevention_text // accident_type_text
 ```
+
+
 
 Per-frame relation JSON files are expected to provide at least:
 
