@@ -264,7 +264,7 @@ The following checkpoints are organized into two groups.
 | Model | Prediction Checkpoint | Retrospection Checkpoint | Notes |
 |---|---|---|---|
 | Seer | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/OUT) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/OUT_H) | Released checkpoints for prediction and retrospection |
-| Cosmos | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5_P) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5)] | Released checkpoints for prediction and retrospection |
+| Cosmos | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5_P) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5) | Released checkpoints for prediction and retrospection |
 | MCVD | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/MCVD_W) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/MCVD_W) | Released checkpoints for prediction and retrospection |
 | FAR | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/FAR/save_path/P_models) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/FAR/save_path/R_models) | Released checkpoints for prediction and retrospection |
 
