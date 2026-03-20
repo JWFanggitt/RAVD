@@ -22,7 +22,7 @@ The repository currently includes:
 - `grapth_my_dataset.py`: dataset loading and path definitions.
 - `configs/lora_training_config.yaml`: default config used by both training and inference scripts.
 
-This README is a general project guide. A separate section below briefly documents the **Key Action** and **Prevention** tasks only. For other MMAU tasks and benchmark details, please visit the homepage: `www.lotvsmmau.net`.
+This README is a general project guide. A separate section below briefly documents the **Key Action** and **Prevention** tasks only. For other MMAU tasks and benchmark details, please visit the [homepage](www.lotvsmmau.net).
 
 ## Environment Setup
 
@@ -253,6 +253,31 @@ So the prevention task can be viewed as:
 ```
 
 Download the key_action and prevention tasks [data](https://drive.google.com/file/d/1cNxH-sCtCYHqPAogq6YhH2WJOvrH8XjC/view?usp=sharing)
+
+
+## Model Zoo
+
+The following checkpoints are organized into two groups.
+
+### Prediction and Retrospection
+
+| Model | Prediction Checkpoint | Retrospection Checkpoint | Notes |
+|---|---|---|---|
+| Seer | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/OUT) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/OUT_H) | Released checkpoints for prediction and retrospection |
+| Cosmos | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5_P) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/cosmos_predict_v2p5)] | Released checkpoints for prediction and retrospection |
+| MCVD | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/MCVD_W) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/MCVD_W) | Released checkpoints for prediction and retrospection |
+| FAR | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/FAR/save_path/P_models) | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/FAR/save_path/R_models) | Released checkpoints for prediction and retrospection |
+
+### Key Action and Prevention
+
+| Task | Model | Checkpoint | Notes |
+|---|---|---|---|
+| Key Action | AVD2 | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/OUT_Key) | Checkpoint and results for key-action grounding |
+| Prevention | AVD2 | [CKPT](https://huggingface.co/wwwadad/ADVersa/tree/main/Out_Q) | Add the released prevention checkpoint here |
+
+Other Tasks model weights
+
+Coming soon.
 
 ## Citation
 
